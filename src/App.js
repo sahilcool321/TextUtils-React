@@ -40,12 +40,12 @@ function App() {
         <div className="container my-3">
           <Switch>
             <Route exact path="/about">
-              <About />
+              <About mode={mode} />
             </Route>
             <Route exact path="/">
               <TextForm
                 showAlert={showAlert}
-                heading="Enter the text to analyze below"
+                heading="Try TextUtils - Word Counter | Character Counter | Remove Extra Spaces"
                 mode={mode}
               />
             </Route>
