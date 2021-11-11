@@ -102,7 +102,8 @@ export default function Textform(props) {
         <h2>Your text summary</h2>
         <p>
           {
-            text.split(" ").filter((element) => {
+            text.split(/\s+/).filter((element) => {
+              // regular expression jo split krega white spaces aur next line ko bhi
               return element.length !== 0;
             }).length
           }{" "}
